@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout10">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contactToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/MindYourMood.ActivityTheme.Toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linWhoToRingTitle"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+        <TextView
+            android:text="@string/whoToCallContactTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitleText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/mindyourmood_text_xlarge"
+            style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linearLayout5"
+        android:background="@android:color/white" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lstContacts"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarSize="3dp"
+        android:layout_weight="1"
+        android:longClickable="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linContactsActionButtons"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/space1"
+            android:layout_weight="1" />
+        <Button
+            android:text="@string/wordDoneUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDone"
+            android:background="@null"
+            android:textSize="@dimen/mindyourmood_text_xlarge"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

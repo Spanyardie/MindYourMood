@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chuffChartToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/MindYourMood.ActivityTheme.Toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout11">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linAchievementChartMainBody">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linChuffChart"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:id="@+id/linearLayout1"
+                    android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                    android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+                    android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+                    android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="@string/AchievementChartTitle"
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                        android:textSize="@dimen/mindyourmood_text_xlarge"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linAchievementSep1"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+                android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:id="@+id/lstAchievements"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linSelectDate"
+                android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+                android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                android:paddingRight="@dimen/mindyourmood_padding_horizontal">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout12">
+                    <ImageButton
+                        android:src="@drawable/calendar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgbtnSelectDate"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:minHeight="@dimen/mindyourmood_icons_large"
+                        android:minWidth="@dimen/mindyourmood_icons_large"
+                        android:scaleType="fitCenter" />
+                    <TextView
+                        android:text="Small Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtSelectedDate"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/mindyourmood_text_xlarge"
+                        style="@style/MindYourMood.ActivityTheme.HeaderFooterText" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/space2"
+                    android:layout_weight="1" />
+                <Button
+                    android:text="@string/wordDoneUpper"
+                    android:id="@+id/btnDone"
+                    android:background="@null"
+                    android:textSize="@dimen/mindyourmood_text_xlarge"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/MindYourMood.ActivityTheme.HeaderFooterText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    style="@style/MindYourMood.ActivityTheme.Body">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:src="@drawable/mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgMicrophoneImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:minWidth="80dp"
+            android:minHeight="80dp" />
+        <TextView
+            android:text="@string/recordAudioLabelReady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRecordAudioLabel"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/mindyourmood_padding_vertical_large"
+            android:layout_marginTop="@dimen/mindyourmood_padding_vertical_large"
+            android:textSize="20sp"
+            style="@style/MindYourMood.ActivityTheme.BodyText" />
+        <Button
+            android:text="@string/recordAudioButtonRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecordAudio"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linVoiceTitle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="@string/VoiceRecordTitleText"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitleLabel"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                style="@style/MindYourMood.ActivityTheme.BodyText" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:id="@id/space2" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout15"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/edtTitle"
+                    android:textSize="20sp"
+                    style="@style/MindYourMood.ActivityTheme.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/linearLayout12"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/linActionButtons"
+            android:layout_marginTop="10dp">
+            <Button
+                android:text="@string/wordCancelUpper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCancelled"
+                android:background="@null"
+                style="@style/MindYourMood.ActivityTheme.BodyText"
+                android:textSize="@dimen/mindyourmood_text_large" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@id/space1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/wordAcceptUpper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCompleted"
+                android:background="@null"
+                style="@style/MindYourMood.ActivityTheme.BodyText"
+                android:textSize="@dimen/mindyourmood_text_large" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
