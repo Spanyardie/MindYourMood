@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="MindYourMood.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="F:\Visual_Studio_2015\Projects\com\spanyardie\MindYourMood\MedicationListActivity.cs" line="255" column="1" />
+      <Breakpoint file="F:\Visual_Studio_2015\Projects\com\spanyardie\MindYourMood\MedicationListActivity.cs" line="227" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MindYourMood AndroidDesignerPreferredDevice="5.1&quot; WVGA" AndroidDesignerPreferredTheme="Theme.DeviceDefault.Light" PreferredExecutionTarget="Android.0915f954e0092c02" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MedicationListActivity.cs">
+    <Files>
+      <File FileName="MedicationListActivity.cs" Line="241" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

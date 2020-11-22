@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="headerFooterColor">#71C4E4</color>
+  <color name="bodyColor">#98D4EB</color>
+  <color name="toolbarColor">#FF3BAFDA</color>
+
+  <color name="bodyGradientStart">#71C4E4</color>
+  <color name="bodyGradientEnd">#1574D3</color>
+
+  <color name="spinnerDropdownBackground">#1574D3</color>
+
+  <color name="textShadowColour">#000000</color>
+  
+</resources>

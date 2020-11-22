@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout5">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linMusicPickerHeader"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_normal"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linMusicPickerHeadingTitle">
+            <TextView
+                android:text="@string/MusicPickerDialogLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMusicPickerHeadingText"
+                android:textSize="@dimen/mindyourmood_text_xxlarge"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooterText" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linMusicPickerPlayList"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_normal"
+        style="@style/MindYourMood.ActivityTheme.Body">
+        <TextView
+            android:text="@string/MusicPickerDialogLayoutPlaylistLabel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtMusicPickerPlayListLabel"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/mindyourmood_text_xlarge"
+            style="@style/MindYourMood.ActivityTheme.BodyText" />
+        <TextView
+            android:text="A PlayList you are adding tracks to"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMusicPickerPlayListText"
+            android:textStyle="bold"
+            android:textSize="@dimen/mindyourmood_text_xlarge"
+            style="@style/MindYourMood.ActivityTheme.BodyText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linMusicPickerSep1"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lstMusicPicker"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linMusicPickerActionButtons"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_normal"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal">
+        <Button
+            android:text="@string/wordCancelUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMusicPickerGoBack"
+            android:background="@null"
+            style="@style/MindYourMood.ActivityTheme.BodyText"
+            android:textSize="@dimen/mindyourmood_text_xxlarge" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_weight="1" />
+        <Button
+            android:text="@string/wordAddUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMusicPickerAdd"
+            android:background="@null"
+            style="@style/MindYourMood.ActivityTheme.BodyText"
+            android:textSize="@dimen/mindyourmood_text_xxlarge" />
+    </LinearLayout>
+</LinearLayout>

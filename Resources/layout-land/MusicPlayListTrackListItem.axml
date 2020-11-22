@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linTrackListItemMain"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:text="Track Title"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtTrackListItemTitle"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MindYourMood.ActivityTheme.BodyText" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Artist"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/txtTrackListItemArtist"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                style="@style/MindYourMood.ActivityTheme.BodyText" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/space1"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgWave"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="10dp"
+                android:visibility="invisible"
+                android:background="@null" />
+            <TextView
+                android:text="Duration:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTrackListItemDuration"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                style="@style/MindYourMood.ActivityTheme.BodyText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
