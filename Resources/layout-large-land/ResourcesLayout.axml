@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="1"
+    android:id="@+id/linearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/resourcesMainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/MindYourMood.ActivityTheme.Toolbar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/MindYourMood.ActivityTheme.Body"
+        android:id="@+id/frameLayout2">
+        <com.spanyardie.MindYourMood.NonScrollableViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MindYourMood.ActivityTheme.Body" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3"
+            android:weightSum="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7">
+                <TextView
+                    android:text="@string/ResourcesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMainActivityWelcomeDeviceOwner"
+                    android:textSize="@dimen/mindyourmood_text_xlarge"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout1"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+                android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+                android:paddingTop="@dimen/mindyourmood_padding_vertical_normal">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/space1"
+                    android:layout_weight="1" />
+                <Button
+                    android:text="@string/wordDoneUpper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnDone"
+                    android:background="@null"
+                    android:textSize="@dimen/mindyourmood_text_xlarge"
+                    android:layout_gravity="bottom"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

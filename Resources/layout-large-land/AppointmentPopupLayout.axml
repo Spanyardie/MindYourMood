@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linPointerLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPointerTop"
+            android:background="@null"
+            android:src="@drawable/popuppointerleft"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linPopupMain"
+        style="@style/MindYourMood.ActivityTheme.AppointmentPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linPopupTitle"
+            android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+            android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+            android:weightSum="1">
+            <TextView
+                android:text="@string/AppointmentPopupTitleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPopupTitleLabel"
+                style="@style/MindYourMood.ActivityTheme.AppointmentPopup"
+                android:textSize="@dimen/mindyourmood_text_large"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="18 JANUARY 2017"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAppointmentDate"
+                style="@style/MindYourMood.ActivityTheme.AppointmentPopup"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/mindyourmood_text_large"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="450dp"
+            android:id="@+id/lstAppointments"
+            android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+            android:paddingBottom="@dimen/mindyourmood_padding_vertical_normal"
+            android:paddingTop="@dimen/mindyourmood_padding_vertical_normal"
+            android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linPopupActionButtons"
+            android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+            android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+            android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+            android:paddingRight="@dimen/mindyourmood_padding_horizontal">
+            <ImageButton
+                android:src="@drawable/ic_thumb_up_white_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtnPopupDone"
+                android:background="@null"
+                android:layout_gravity="right"
+                android:minHeight="@dimen/mindyourmood_speak_large"
+                android:minWidth="@dimen/mindyourmood_speak_large"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linPointerRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPointerBottom"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/popuppointerright" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/contactSelectDialogQuestion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtContactFragmentTitle"
+        android:textSize="@dimen/mindyourmood_text_large"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lstContacts"
+        android:layout_weight="1"
+        android:divider="@android:drawable/divider_horizontal_dark"
+        android:clickable="true"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+        style="@style/MindYourMood.ActivityTheme.Body" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linActionButtons"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+        <Button
+            android:text="@string/wordCancelUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCancel"
+            android:background="@null"
+            style="@style/MindYourMood.ActivityTheme.BodyText"
+            android:textSize="@dimen/mindyourmood_text_large" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_weight="1" />
+        <Button
+            android:text="@string/wordAddUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnConfirm"
+            android:background="@null"
+            style="@style/MindYourMood.ActivityTheme.BodyText"
+            android:textSize="@dimen/mindyourmood_text_large" />
+    </LinearLayout>
+</LinearLayout>
