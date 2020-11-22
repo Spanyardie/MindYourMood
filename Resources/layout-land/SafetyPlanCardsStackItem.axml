@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:background="#FF8B0000">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:background="#FFE0FFFF">
+            <TextView
+                android:text="@string/CalmCardTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitle"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3"
+                android:weightSum="1">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout4"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:text="@string/CalmCardCalmMyselfShort"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/txtCalmMyself"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtCalmMyselfText"
+                        android:minLines="3"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:text="@string/CalmCardTellMyselfShort"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTellMyself"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTellMyselfText"
+                        android:minLines="3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout5"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:text="@string/CalmCardWhoCallShort"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtCall"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtCallText"
+                        android:minLines="3"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:text="@string/CalmCardWhereGoShort"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGoTo"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGoToText"
+                        android:maxLines="2"
+                        android:minLines="3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
