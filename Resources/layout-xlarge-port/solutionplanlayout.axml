@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/solutionPlanToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/MindYourMood.ActivityTheme.Toolbar" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linSolutionPlanHeader"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_xlarge"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_xlarge"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linSolutionPlanHeadingTitle">
+            <TextView
+                android:text="@string/SolutionPlanLayoutText"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSolutionPlanHeadingText"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/mindyourmood_text_xxlarge"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linSolutionPlanProblem"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_xlarge"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_xlarge"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+        <TextView
+            android:text="@string/SolutionPlanLayoutIdeaLabel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtSolutionPlanIdeaLabel"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/mindyourmood_text_xlarge"
+            style="@style/MindYourMood.ActivityTheme.HeaderFooter" />
+        <TextView
+            android:text="The idea that is most likely to solve your problem"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSolutionPlanIdeaText"
+            android:textStyle="bold"
+            android:textSize="@dimen/mindyourmood_text_xlarge"
+            style="@style/MindYourMood.ActivityTheme.HeaderFooterText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linearLayout6"
+        android:background="@android:color/white" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lstSolutionPlans"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_xlarge"
+        style="@style/MindYourMood.ActivityTheme.Body" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+        android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+        android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_weight="1" />
+        <Button
+            android:text="@string/wordDoneUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnDone"
+            android:background="@null"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/mindyourmood_text_xxlarge"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

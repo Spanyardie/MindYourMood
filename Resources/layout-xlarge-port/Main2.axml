@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/MindYourMood.ActivityTheme.Toolbar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/MindYourMood.ActivityTheme.Body">
+        <com.spanyardie.MindYourMood.NonScrollableViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MindYourMood.ActivityTheme.Body" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/imgMainActivityDeviceOwner"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:text="Welcome, Seb Quelcutti"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMainActivityWelcomeDeviceOwner"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+            android:layout_gravity="bottom">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:text="Mind Your Mood V1.0.0"
+                    android:id="@+id/textView1"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="5dp" />
+                <TextView
+                    android:text="Copyright © Spanyardie Studios 2017"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:gravity="center_horizontal"
+                    style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

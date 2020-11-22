@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+        android:paddingRight="@dimen/mindyourmood_padding_horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+            android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+            android:background="@drawable/border"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.9"
+            android:paddingBottom="20dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtnSpeakWhen"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/ic_keyboard_voice_white_48dp"
+                android:layout_marginBottom="20dp"
+                android:maxHeight="@dimen/mindyourmood_icons_normal"
+                android:maxWidth="@dimen/mindyourmood_icons_normal"
+                android:minHeight="@dimen/mindyourmood_icons_normal"
+                android:minWidth="@dimen/mindyourmood_icons_normal"
+                android:scaleType="fitCenter" />
+            <EditText
+                android:id="@+id/edtSituationItemWhen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:maxLines="5"
+                android:textSize="30sp"
+                style="@style/MindYourMood.ActivityTheme.BodyText" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/linearLayout3"
+                android:background="@android:color/white" />
+            <TextView
+                android:text="When did the Situation occur?"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:paddingTop="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
