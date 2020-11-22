@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout9">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/problemSolvingStepsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/MindYourMood.ActivityTheme.Toolbar" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            style="@style/MindYourMood.ActivityTheme.HeaderFooter">
+            <TextView
+                android:text="@string/ProblemSolvingStepsLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProblemStepsTitle"
+                android:gravity="center_horizontal"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                android:textSize="@dimen/mindyourmood_text_xxlarge"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/mindyourmood_padding_vertical_xlarge" />
+            <TextView
+                android:text="@string/ProblemSolvingStepsLayoutText"
+                android:id="@+id/txtProblemStepsHeadingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+                android:paddingTop="@dimen/mindyourmood_padding_vertical_xlarge"
+                android:paddingBottom="@dimen/mindyourmood_padding_vertical_xlarge"
+                android:gravity="center_horizontal"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                android:textSize="@dimen/mindyourmood_text_xlarge" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linProblemStepsProblem"
+                android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                android:paddingRight="@dimen/mindyourmood_padding_horizontal"
+                android:paddingTop="@dimen/mindyourmood_padding_vertical_xlarge">
+                <TextView
+                    android:text="@string/ProblemSolvingStepsLayoutProblemLabel"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtProblemStepsProblemLabel"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                    android:textSize="@dimen/mindyourmood_text_xxlarge" />
+                <TextView
+                    android:text="A problem that needs to be solved"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProblemStepsProblemText"
+                    android:textStyle="bold"
+                    style="@style/MindYourMood.ActivityTheme.HeaderFooterText"
+                    android:textSize="@dimen/mindyourmood_text_xxlarge" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linProblemStepsResolved" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/space2"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linProblemStepsFooter"
+                style="@style/MindYourMood.ActivityTheme.HeaderFooter"
+                android:paddingBottom="@dimen/mindyourmood_padding_vertical_large"
+                android:paddingTop="@dimen/mindyourmood_padding_vertical_large"
+                android:paddingLeft="@dimen/mindyourmood_padding_horizontal"
+                android:paddingRight="@dimen/mindyourmood_padding_horizontal">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/space1"
+                    android:layout_weight="1" />
+                <Button
+                    android:text="@string/wordDoneUpper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnDone"
+                    android:background="@null"
+                    android:textSize="@dimen/mindyourmood_text_xxlarge"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linProblemStepsSep2"
+            android:background="@android:color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/lstProblemSteps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingBottom="@dimen/mindyourmood_padding_vertical_xlarge" />
+    </LinearLayout>
+</LinearLayout>
